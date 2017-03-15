@@ -79,7 +79,7 @@ public class YahtzeeGUI {
 		{
 			int[] score = null;
 			try {
-				score = Scoring.calculateScore(GuiFun.myDice.dice);
+				score = Scoring.calculateScore(YahtzeeGUIDriver.myDice.dice);
 				Scoring.dumpScore(score);
 				System.out.println("");
 				Scoring.printBestLowerScore(score);
@@ -98,11 +98,11 @@ public class YahtzeeGUI {
 //			System.out.println(e);
 			for(int i=0; i<5; i++)
 			{
-				GuiFun.myDice.held[i] = chkbxDice[i].isSelected(); 
+				YahtzeeGUIDriver.myDice.held[i] = chkbxDice[i].isSelected(); 
 			}
 			
-			GuiFun.myDice.reRollDice();
-			GuiFun.updateGuiDice();
+			YahtzeeGUIDriver.myDice.reRollDice();
+			YahtzeeGUIDriver.updateGuiDice();
 		}
 		
 	}

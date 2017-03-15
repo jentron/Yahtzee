@@ -1,7 +1,7 @@
 package yahtzee;
 
 
-public class GuiFun {
+public class YahtzeeGUIDriver {
 	private static YahtzeeGUI myGui;
 	public static Dice myDice;
 	
