@@ -1,0 +1,7 @@
+After reading through the assignment paper I decided to start with the scoring algorithm. To accomplish that I decided the scoring method should return an ordered array with scores for each possibility. For purposes of the assignment I wrote a method to print the "highest" score possible. I'll want to add a gui later so I am writing for that possibility.
+
+After completing the scoring Class I turned my attention to the parser. I thought about adding a GUI, since I do sometimes actually play Yahtzee computer games, but decided to keep it simple and in-scope for the text Driver class. After re-re-re-reading the assignment I think I have what was asked for. I missed having a sample session printout.
+
+I may extend this with a GUI after submission, and I think it was easier to compute the scores as part of analyzing the scoring patterns. One change I would (did) make was to include full scoring as part of the exercise.
+
+I didn't encounter any roadblocks during this exercise. My scoring method had two bugs I found during testing. One was a logic error on the full house if statement. The other bug was caused when I tried to raise 2 to the nth power by saying '2^n'... In Java the ^ is a bitwise XOR symbol. I ended up using the shift operator, 1<<n, to achieve my goal. To test for small straights I set bits in a test integer. The bits correspond to the number on each die. This let me test the value of the test integer against the 3 possible bit patterns yielding a small straight. 
